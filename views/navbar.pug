@@ -1,0 +1,89 @@
+doctype html
+html
+  head
+    style.
+      /* Reset body margin and padding */
+      body {
+        margin: 0;
+        padding: 0;
+      }
+  
+      /* Navbar styles */
+      .navbar {
+        width: 100%;
+        background-color: #3c2482;
+        padding: 10px 0;
+        font-family: 'Arial, sans-serif';
+        box-shadow: 0 4px 8px rgba(15, 5, 53, 0.89);
+      }
+  
+      .navbar-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+  
+      /* Logo styles */
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+      }
+  
+      .logo a {
+        text-decoration: none;
+        color: #fff;
+      }
+  
+      /* Nav links */
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        margin: 0;
+        padding: 0;
+      }
+  
+      ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+      }
+  
+      /* Auth buttons */
+      .auth-buttons {
+        display: flex;
+        gap: 15px;
+      }
+  
+      .auth-buttons a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+      }
+  
+      .auth-buttons a.register {
+        background-color: rgb(3, 3, 24);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+
+  body
+    .navbar
+      .navbar-container
+        .logo
+          a(href="index.html") YourLogo
+        ul
+          li
+            a(href="home.html") Home
+          li
+            a(href="aboutuspage.html") About Us
+          li
+            a(href="dashboard.html") Dashboard
+          li
+            a(href="newsproject.html") Search
+        .auth-buttons
+          a.register(href="login.html") Login
+          a.register(href="Registration.html") Register

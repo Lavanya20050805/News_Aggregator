@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="assets/CSS/login.css">
+    <style>
+        /* General body styling */
+        body {
+            margin: 0; /* Removes default margin */
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #E6E6FA; /* Set background color to light purple */
+            height: 100vh; /* Ensure full height */
+            display: flex;
+            justify-content: center; /* Center the content horizontally */
+            align-items: center; /* Center the content vertically */
+        }
+
+        /* Navbar styles */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(51, 51, 51, 0.8); /* Slightly transparent navbar */
+            color: white;
+            z-index: 1000;
+            padding: 1rem;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0 15px;
+        }
+
+        .btn-login {
+            color: white;
+            text-decoration: none;
+            padding: 0 15px;
+        }
+
+        /* Main Section */
+        .login-box {
+            background-color: white;
+            border-radius: 15px;
+            padding: 40px; /* Increased padding for a larger appearance */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            width: 400px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .input-box {
+            position: relative;
+            margin-bottom: 20px; /* Space between input boxes */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px; /* Space between label and input */
+            font-weight: bold;
+            color: #333333a8;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccccccfb;
+            border-radius: 5px;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px; /* Space below actions */
+        }
+
+        .button-container {
+            width: 100%; /* Full width for buttons */
+
+            margin-bottom: 20px; /* Space below buttons */
+        }
+
+        .btn-login-form {
+            background-color: #f3e6fa;
+            border: none;
+            color: white;
+            padding: 15px 30px; /* Increased padding for larger buttons */
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2rem; /* Increased font size */
+            width: 100%; /* Make buttons full-width */
+            transition: background-color 0.3s;
+        }
+
+        .btn-login-form:hover {
+            background-color: #007acc;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">News Aggregator</div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="aboutuspage.html">About Us</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="newsproject.html">Search</a></li>
+        </ul>
+        <a href="#" class="btn-login">Login</a>
+    </nav>
+
+    <!-- Main Section -->
+    <div class="login-box">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="input-box">
+                <label for="email">Email</label> <!-- Label above the email input -->
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="input-box">
+                <label for="password">Password</label> <!-- Label above the password input -->
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="actions">
+                <label><input type="checkbox"> Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+
+            <div class="button-container">
+                <button type="submit" class="btn-login-form">Login</button>
+            </div>
+
+            <p>Not a member? <a href="#">Sign up now</a></p>
+        </form>
+    </div>
+
+    <script src="login.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title About Us
+    link(rel="stylesheet", href="assets/CSS/about.css")
+
+  body
+    #navbar-placeholder
+
+    section.about-us
+      .container
+        .text-section
+          h1 About Us
+          p
+            | At 
+            strong OurNews
+            | , we are dedicated to delivering fast, accurate, and unbiased news to millions of readers worldwide. With a team of expert journalists and editors, we cover a wide array of topics from breaking news, politics, technology, entertainment, and more.
+          p We believe in the power of journalism to shape a more informed society, and we are committed to maintaining the highest standards of truth, transparency, and integrity in all our reporting. Stay informed with us.
+          button#learn-more-btn Learn More
+        .image-section
+          img(src="team-illustration.png", alt="Team Illustration")
+
+    script.
+      fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+      });
+    
+    script(src="script.js")

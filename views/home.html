@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Aggregator</title>
+    <link rel="stylesheet" href="assets/CSS/styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    
+    <div id="navbar-placeholder"></div>
+
+    <!-- Main Section -->
+
+
+    <main>
+        <div class="content">
+            <h1>news aggregator that curates content based on your mood, delivering personalized headlines and deep dives. Its interactive visual radar offers a dynamic, immersive news experience tailored to your interests.</h1>
+            <a href="#" class="btn-green">Read News360 in your browser</a>
+            <div class="download-buttons">
+                <a href="#" class="app-btn">Download on the App Store</a>
+                <a href="#" class="app-btn">Get it on Google Play</a>
+            </div>
+        </div>
+    </main>
+    <style>
+        body {
+            background-image: url('..\image\image.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style> 
+
+    <!-- Footer -->
+    <footer>
+        <div class="newsletter">
+            <h2>Join Our Mailing List</h2>
+            <p>Stay up to date with the latest news, updates, special offers, and more!</p>
+            <form id="subscribe-form">
+                <input type="email" placeholder="Enter your email address here" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+        <div class="footer-links">
+            <div class="footer-nav">
+                <a href="#">My Account</a>
+                <a href="#">FAQ</a>
+                <a href="#">Contact</a>
+                <a href="#">Legal</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+
+            <div class="social-icons">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2024. All rights reserved. Built by YourCompany.</p>
+        </div>
+    </footer>
+    <script>
+        fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+      });
+    
+       </script>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
